@@ -1,0 +1,232 @@
+<!--Raghad Garout-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satellite Performance Monitoring Dashboard</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Lucida Console', monospace; /* Font */
+            font-size: larger;
+            color: rgb(14, 9, 74); /* Text color for contrast */
+            overflow: auto; /* auto: allows scrolling */
+        }
+        header {
+            background-image: url('/Users/raghadgarout/Downloads/raghad_IE321/IMGS/header bg.png'); /* Add your image path here */
+            background-size: cover; /* Cover the entire header */
+            background-position: center; /* Center the image */
+            color: white;
+            padding: 20px 20px;
+            text-align: center;
+            font-size: larger;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+            margin-top: 60px; /* To avoid overlap with the header */
+        }
+        section {
+            margin-bottom: 40px;
+            background: rgba(255, 255, 255, 0.5); /* Semi-transparent background for sections */
+            padding: 10px;
+            border-radius: 8px;
+        }
+        .content-container {
+            display: flex; /* Use flexbox layout */
+            align-items: flex-start; /* Align items to the start */
+        }
+        .text-content {
+            flex: 1; /* Allow text to take remaining space */
+            max-width: 60%; /* Limit width of text content */
+        }
+        .image-content {
+            max-width: 35%; /* Set width for the image container */
+            margin-left: 20px; /* Space between text and image */
+        }
+        .image-content img {
+            width: 100%; /* Make image responsive */
+            height: auto; /* Maintain aspect ratio */
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #f1f1f1;
+        }
+        h1, h2 {
+            font-size: 30px;
+            margin: 0;
+        }
+        h3 {
+            font-size: 25px;
+        }
+        video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1; /* Send video behind other content */
+            overflow: auto;
+        }
+        img.logo {
+            width: 350px; /* Adjust size as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+    </style>
+</head>
+<body>
+    <video id="bg_video" src="/Users/raghadgarout/Downloads/raghad_IE321/IMGS/hero.mp4" autoplay muted loop>
+    </video>
+    <header>
+        <img src="/Users/raghadgarout/Downloads/raghad_IE321/IMGS/Untitled Project (1).png" alt="Logo" class="logo"> <!-- Replace with your logo path -->
+        <h1>Satellite Performance Monitoring Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#data">Data</a></li>
+                <li><a href="#reports">Reports</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home">
+            <div class="content-container">
+                <div class="text-content">
+                    <h2>Overview of the Dashboard</h2>
+                    <p>The Satellite Performance Monitoring Dashboard is designed to simplify the tracking of satellite health by transforming overwhelming 
+                        raw data into easily understandable visualizations. This tool provides users with real-time insights into the performance metrics of 
+                        satellites, enabling better decision-making and proactive management.</p>
+
+                    <h3>Key Features</h3>
+                    <ul>
+                        <li><strong>Real-Time Data Monitoring</strong>: Continuously updates key performance metrics to ensure users have the latest information.</li>
+                        <li><strong>Visualization Tools</strong>: Utilizes charts and graphs to present complex data in a visually accessible manner.</li>
+                        <li><strong>Alert Systems</strong>: Notifies users of any critical changes or issues that require immediate attention.</li>
+                    </ul>
+                </div>
+                <div class="image-content">
+                    <img src="path/to/your/image.jpg" alt="Satellite Dashboard" />
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <div class="content-container">
+                <div class="text-content">
+                    <h2>About</h2>
+
+                    <h3>Project Background</h3>
+                    <p>This project was initiated to address the challenge of tracking satellite health amidst overwhelming raw data. By creating a user-friendly dashboard, we aim to provide a solution that visualizes key performance metrics, making it easier for users to monitor and analyze satellite performance.</p>
+
+                    <h3>Team Members</h3>
+                    <ul>
+                        <li><strong>Joud</strong>: Responsible for handling and organizing the data, ensuring it is accurate and up-to-date.</li>
+                        <li><strong>Rayan</strong>: Analyzes the data and generates reports, ensuring that key metrics are displayed correctly on the dashboard.</li>
+                        <li><strong>Raghad Garout</strong>: Develops and programs the interface of the dashboard, focusing on usability and functionality.</li>
+                    </ul>
+
+                    <h3>Technology Stack</h3>
+                    <p>The dashboard is built using the following technologies:</p>
+                    <ul>
+                        <li><strong>SQL</strong>: For database management and data retrieval.</li>
+                        <li><strong>Excel</strong>: For initial data analysis and manipulation.</li>
+                        <li><strong>HTML</strong>: For structuring the web interface.</li>
+                    </ul>
+
+                    <h3>Industrial Engineering Applications</h3>
+                    <ul>
+                        <li><strong>Reliability Engineering</strong>: The dashboard aids in predicting potential satellite failures, allowing for proactive maintenance scheduling.</li>
+                        <li><strong>Process Optimization</strong>: Analyzing performance trends enables improved decision-making for mission planning and satellite operations.</li>
+                        <li><strong>Lean Systems & Waste Reduction</strong>: By minimizing unexpected failures, we reduce downtime and unnecessary maintenance costs.</li>
+                    </ul>
+                </div>
+                <div class="image-content">
+                    <img src="path/to/your/image.jpg" alt="About Dashboard" />
+                </div>
+            </div>
+        </section>
+
+        <!-- Data Section -->
+        <section id="data">
+            <div class="content-container">
+                <div class="text-content">
+                    <h2>Satellite Data</h2>
+
+                    <h3>Performance Metrics</h3>
+                    <p>What to write?</p>
+
+                    <h3>Environmental <Data></Data></h3>
+                    <p>What to write?</p>
+                </div>
+                <div class="image-content">
+                    <img src="path/to/your/image.jpg" alt="About Dashboard" />
+                </div>
+            </div>
+        </section>
+
+        <!-- Report Section -->
+        <section id="reports">
+            <div class="content-container">
+                <div class="text-content">
+                    <h2>Reports</h2>
+
+                    <h3>keep or remove?</h3>
+                    <p>What to write?</p>
+                </div>
+                <div class="image-content">
+                    <img src="path/to/your/image.jpg" alt="About Dashboard" />
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact: info@dataOrbit.com</p>
+        <p>&copy; 2025 Satellite Performance Monitoring By DATAORBIT</p>
+    </footer>
+
+    <script>
+        // Example data for the chart
+        const ctx = document.getElementById('performanceChart').getContext('2d');
+        const performanceChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['January', 'February', 'March', 'April', 'May'],
+                datasets: [{
+                    label: 'Power Level (%)',
+                    data: [80, 85, 90, 70, 75],
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 2,
+                    fill: false
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
